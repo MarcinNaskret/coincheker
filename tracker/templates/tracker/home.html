@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+$(document).ready(function(){
+
+
+
+function laduj(){
+
+        $("#razem").load(' #razem')
+
+}
+
+ setInterval(laduj,10*1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+</script>
+
+<div id="razem"></div>
+
+
+
+
+</head>
+<body>
+trolololo<br><br>
+
+
+
+<div id="razem">{{ test }}</div>
+
+
+<div id="contact_form">
+<form method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Submit</button>
+
+</form>
+</div>
+<br><br><br><br>
+
+
+
+
+<div id="stellar"> </div>
+
+</body>
+</html>
